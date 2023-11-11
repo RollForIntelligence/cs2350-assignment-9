@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Project Starter</title>
+    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
     <meta name="description" content="TODO: A starter project for ..." />
@@ -12,15 +12,39 @@
 
   <body>
     <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5">
-      <span class="d-block py-5">
-        <i class="bi bi-filetype-html text-primary"></i>
-        <i class="bi bi-filetype-css text-danger"></i>
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
+    <div class="container my-5">
+      <h1 class="title my-5">Guest <i class="bi bi-book-half"></i> Book</h1>
 
-      Welcome to CS 2350!
-    </h1>
+      <form action="" class="my-5">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label fw-bold">Guest's first name</label>
+          <input type="text" class="form-control" id="first-name" placeholder="First name goes here">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label fw-bold">Guest's last name</label>
+          <input type="text" class="form-control" id="last-name" placeholder="Last name goes here">
+        </div>
+        <button type="submit" class="btn btn-primary">Add a guest</button>
+        <button type="button" class="btn btn-secondary">Reset</button>
+      </form>
+
+      <div class="container">
+        <h1>Registered guests</h1>
+        <button type="button" class="btn btn-danger float-end">Clear all</button>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+            </tr>
+          </thead>
+          <tbody id="guests" class="table-group-divider">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
 
     <script type="module" src="./javascripts/main.js"></script>
   </body>
