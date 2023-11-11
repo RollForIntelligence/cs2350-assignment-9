@@ -15,7 +15,7 @@
     <div class="container my-5">
       <h1 class="title my-5">Guest <i class="bi bi-book-half"></i> Book</h1>
 
-      <form action="" class="my-5">
+      <form action="" class="my-5" id="myForm">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label fw-bold">Guest's first name</label>
           <input type="text" class="form-control" id="first-name" placeholder="First name goes here">
@@ -25,12 +25,12 @@
           <input type="text" class="form-control" id="last-name" placeholder="Last name goes here">
         </div>
         <button type="submit" class="btn btn-primary">Add a guest</button>
-        <button type="button" class="btn btn-secondary">Reset</button>
+        <button type="button" class="btn btn-secondary" id="reset">Reset</button>
       </form>
 
       <div class="container">
         <h1>Registered guests</h1>
-        <button type="button" class="btn btn-danger float-end">Clear all</button>
+        <button type="button" class="btn btn-danger float-end" id="clear-guests">Clear all</button>
         <table class="table table-striped">
           <thead>
             <tr>
